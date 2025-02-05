@@ -16,35 +16,32 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "21"
-          cache: "npm"
+          cache: "pnpm"
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Validate Data
-        run: npm run validate
+        run: pnpm run validate
 
       - name: Generate README
-        run: npm run readme
-
-      - name: Check for changes
-        id: check_changes
-        run: |
-          if git diff --quiet; then
-            echo "No changes detected"
-            echo "HAS_CHANGES=false" >> $GITHUB_ENV
-          else
-            echo "Changes detected"
-            echo "HAS_CHANGES=true" >> $GITHUB_ENV
-          fi
+        run: pnpm run readme
 
       - name: Commit and push changes
-        if: env.HAS_CHANGES == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add README.md
-          git commit -m "Update README.md"
-          git push
+          if ! git diff --quiet; then
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add README.md
+            git commit -m "Update README.md"
+            git push
+          else
+            echo "No changes to commit"
+          fi

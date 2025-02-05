@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "preinstall": "only-allow pnpm",
     "validate": "tsx src/validate.ts",
     "readme": "tsx src/readme.ts"
   },
@@ -10,6 +11,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
+    "only-allow": "^1.2.1",
     "tsx": "^4.19.1"
   }
 }
