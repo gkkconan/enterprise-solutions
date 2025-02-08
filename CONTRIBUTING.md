@@ -21,7 +21,7 @@ Please follow these steps to contribute to this repository:
 4. Install [pnpm](https://pnpm.io/installation) (if not already installed)
 5. Install the dependencies:
    ```bash
-   pnpm install
+   pnpm install --frozen-lockfile
    ```
 6. Validate the solutions:
    ```bash
