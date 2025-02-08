@@ -18,11 +18,16 @@ Please follow these steps to contribute to this repository:
 1. [Fork the repository](https://github.com/SebaOfficial/enterprise-solutions/fork)
 2. Create a new branch like `my-solution`
 3. Edit [`assets/solutions.json`](/assets/solutions.json)
-4. Validate the solutions:
+4. Install [pnpm](https://pnpm.io/installation) (if not already installed)
+5. Install the dependencies:
    ```bash
-   npm run validate
+   pnpm install --frozen-lockfile
    ```
-5. Create a pull request
+6. Validate the solutions:
+   ```bash
+   pnpm validate
+   ```
+7. Create a pull request
 
 ## Thank You
 
