@@ -1,12 +1,14 @@
 # Open Source Enterprise Solutions
+
 Welcome to the Open Source Enterprise Solutions repository! This repository is a curated list of open source software that can be used in enterprise environments. Whether you are looking for a CRM, ERP, or other enterprise-grade solutions, you'll find it here.
 
 **Note**: This repository is not associated with nor affiliated with any of the listed solutions.
 
 ## Table Of Contents
-* [Contributing](/CONTRIBUTING.md)
-* [License](#license)
-* [Solutions](#solutions)
+
+- [Contributing](/CONTRIBUTING.md)
+- [License](#license)
+- [Solutions](#solutions)
 	* [Backups](#backups)
 	* [File Storage & Sharing](#file-storage--sharing)
 	* [Human Resources Management](#human-resources-management)
@@ -14,12 +16,14 @@ Welcome to the Open Source Enterprise Solutions repository! This repository is a
 	* [Mail](#mail)
 	* [Password Manager](#password-manager)
 	* [Scheduling & Time Management](#scheduling--time-management)
+	* [Server Management](#server-management)
 	* [User Management](#user-management)
 	* [Virtual Machines](#virtual-machines)
 	* [VPN](#vpn)
 
 
 ## Solutions
+
 The solutions are listed by alphabetical order.
 
 ### Backups
@@ -64,6 +68,11 @@ The solutions are listed by alphabetical order.
 | --- | --- | --- |
 | [Proton Calendar](https://proton.me/calendar) | Your calendar is a record of your life. Proton Calendar helps keep it private. | [ProtonMail/proton-calendar](https://github.com/ProtonMail/proton-calendar) |
 
+### Server Management
+| Name | Description | GitHub URL |
+| --- | --- | --- |
+| [Nginx UI](https://nginxui.com/) | An intuitive graphical interface designed to simplify the management and configuration of Nginx, enhanced with online statistics for server indicators. | [0xJacky/nginx-ui](https://github.com/0xJacky/nginx-ui) |
+
 ### User Management
 | Name | Description | GitHub URL |
 | --- | --- | --- |
@@ -81,5 +90,7 @@ The solutions are listed by alphabetical order.
 | [Proton VPN](https://protonvpn.com/) | Anonymous VPN service that keeps your browsing history private without logging. | [ProtonVPN](https://github.com/ProtonVPN) |
 
 
+
 ## License
+
 This project is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
