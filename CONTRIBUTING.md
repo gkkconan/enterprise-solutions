@@ -18,7 +18,7 @@ Please follow these steps to contribute to this repository:
 1. [Fork the repository](https://github.com/SebaOfficial/enterprise-solutions/fork)
 2. Create a new branch like `my-solution`
 3. Edit [`assets/solutions.json`](/assets/solutions.json)
-4. Install pnpm (if not already installed)
+4. Install [pnpm](https://pnpm.io/installation) (if not already installed)
 5. Install the dependencies:
    ```bash
    pnpm install
