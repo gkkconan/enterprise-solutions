@@ -10,7 +10,8 @@
     "Human Resources Management",
     "Backups",
     "Low-Code No-Code",
-    "User Management"
+    "User Management",
+    "Server Management"
   ],
   "solutions": [
     {
@@ -138,6 +139,13 @@
       "description": "Manage user authentication.",
       "category": 9,
       "github": "supertokens"
+    },
+    {
+      "name": "Nginx UI",
+      "url": "https://nginxui.com/",
+      "description": "An intuitive graphical interface designed to simplify the management and configuration of Nginx, enhanced with online statistics for server indicators.",
+      "category": 10,
+      "github": "0xJacky/nginx-ui"
     }
   ]
 }
